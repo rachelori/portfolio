@@ -16,12 +16,35 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JQuery -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Load custom JavaScript file -->
+    <script src="scripts/app.js"></script>
+
     <title>Rachel Kern's Portfolio
     </title>
 </head>
 
-<body>
+<body class="js-menu-close">
+    <div id="sidebar-wrapper" class="js-menu-open">
+        <div id="close-btn" class="js-menu-close">
+            <img src="img/icons/x.svg" />
+        </div>
+        <h2>Spike</h2>
+        <h2>Speigel</h2>
+        <div class="sidebar-links">
+            <a href="#Intro">About</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </div>
+
     <div id="intro" class="container-fluid hero landscape">
+        <div id="hamburger" class="js-menu-open">
+            <img src="img/icons/menu.svg" />
+        </div>
         <h1>Spike Speigel</h1>
         <h5>Freelance Photographer</h5>
         <a href="#gallery"><button type="button" class="cta">Gallery</button></a>
