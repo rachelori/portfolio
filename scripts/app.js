@@ -4,7 +4,7 @@ $(document).ready(function() {
     $menu.addClass("open");
     return evt.target.tagName === "A";
   });
-  $(document).on("click", ".js-menu-close", function(evt) {
+ $(document).on("click", ".js-menu-close", function(evt) {
     $menu.removeClass("open");
     return evt.target.tagName === "A";
   });
